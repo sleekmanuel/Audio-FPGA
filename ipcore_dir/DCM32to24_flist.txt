@@ -1,0 +1,2 @@
+# Output products list for <DCM32to24>
+DCM32to24_flist.txt

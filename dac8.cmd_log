@@ -1,0 +1,1 @@
+vhdtdtfi -prj Flash -o "C:/Users/Student/Desktop/LAB 13/Flash/dac8.vhi" -module dac8 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work dac8.vhd 

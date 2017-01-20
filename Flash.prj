@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/counter30.vhd"
+vhdl work "ipcore_dir/memory.vhd"
+vhdl work "DCM32to24.vhd"
+vhdl work "dac8.vhd"
+vhdl work "Flash.vhd"

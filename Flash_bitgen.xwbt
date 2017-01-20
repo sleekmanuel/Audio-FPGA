@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Student\Desktop\LAB 13\Flash\Flash.ncd
+OUTFILE=C:\Users\Student\Desktop\LAB 13\Flash\Flash.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Student\Desktop\LAB 13\Flash
+LICENSE=WebPack
+USER_INFO=210683381_0_0_114

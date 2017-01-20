@@ -1,0 +1,215 @@
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+vhdtdtfi -lib work Flash.vhd -prj Flash -o Flash.spl -module Flash -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Flash.spl {C:/Users/Student/Desktop/LAB 13/Flash/Flash.sym} 
+vhdtdtfi -prj Flash -o "C:/Users/Student/Desktop/LAB 13/Flash/Flash.vhi" -module Flash -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/counter30.vhd -lib work ipcore_dir/memory.vhd -lib work Flash.vhd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-vq100-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-vq100-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.xst" -ofn "C:/Users/Student/Desktop/LAB 13/Flash/Flash.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-5 "Flash.ngc" Flash.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Flash_map.ncd Flash.ngd Flash.pcf 
+par -w -intstyle ise -ol high -t 1 Flash_map.ncd Flash.ncd Flash.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Flash.twx Flash.ncd -o Flash.twr Flash.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f Flash.ut Flash.ncd 

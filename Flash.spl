@@ -1,0 +1,5 @@
+[Inputs]
+clk
+[Outputs]
+=LEDs[7:0]=
+[BiDir]
